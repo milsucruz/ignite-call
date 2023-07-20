@@ -103,8 +103,6 @@ export function Calendar({ selectedDate, onDateSelected }: CalendarProps) {
     return calendarWeeks
   }, [currentDate])
 
-  console.log(calendarWeeks)
-
   const shortWeekDays = getWeekDays({ short: true })
 
   const currentMonth = currentDate.format('MMMM')
