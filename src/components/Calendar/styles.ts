@@ -1,6 +1,6 @@
 import { styled, Text } from '@ignite-ui/react'
 
-export const CalendarContaier = styled('div', {
+export const CalendarContainer = styled('div', {
   display: 'flex',
   flexDirection: 'column',
   gap: '$6',
