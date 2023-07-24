@@ -53,12 +53,13 @@ export default function UpdateProfile() {
           Precisamos de algumas informações para criar seu perfil! Ah, você pode
           editar essas informações depois.
         </Text>
+
         <MultiStep size={4} currentStep={4} />
       </Header>
 
       <ProfileBox as="form" onSubmit={handleSubmit(handleUpdateProfile)}>
         <label>
-          <Text size="sm">Foto de perfil</Text>
+          <Text>Foto de perfil</Text>
           <Avatar
             src={session.data?.user.avatar_url}
             referrerPolicy="no-referrer"
@@ -82,6 +83,7 @@ export default function UpdateProfile() {
     </Container>
   )
 }
+
 export const getServerSideProps: GetServerSideProps = async ({ req, res }) => {
   const session = await unstable_getServerSession(
     req,

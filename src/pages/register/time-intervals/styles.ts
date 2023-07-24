@@ -6,7 +6,7 @@ export const IntervalBox = styled(Box, {
   flexDirection: 'column',
 })
 
-export const IntervalsContainer = styled('div', {
+export const IntervalContainer = styled('div', {
   border: '1px solid $gray600',
   borderRadius: '$md',
   marginBottom: '$4',
@@ -14,7 +14,7 @@ export const IntervalsContainer = styled('div', {
 
 export const IntervalItem = styled('div', {
   display: 'flex',
-  alignContent: 'center',
+  alignItems: 'center',
   justifyContent: 'space-between',
   padding: '$3 $4',
 
@@ -25,13 +25,13 @@ export const IntervalItem = styled('div', {
 
 export const IntervalDay = styled('div', {
   display: 'flex',
-  alignContent: 'center',
+  alignItems: 'center',
   gap: '$3',
 })
 
 export const IntervalInputs = styled('div', {
   display: 'flex',
-  alignContent: 'center',
+  alignItems: 'center',
   gap: '$2',
 
   'input::-webkit-calendar-picker-indicator': {
